@@ -1,0 +1,17 @@
+name = "isle-thrift-api"
+main = "src/index.ts"
+compatibility_date = "2026-07-05"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "isle_thrift"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "isle-thrift-photos"
+
+[vars]
+JWT_ISSUER = "isle-thrift"
+JWT_AUDIENCE = "isle-thrift-users"
+APP_ORIGIN = "https://your-pages-domain.pages.dev"
